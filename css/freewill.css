@@ -1,0 +1,117 @@
+/*body {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*}*/
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#display {
+  display: flex;
+  justify-content: center;
+  width: 90%; /* minus a moderate margin */
+  margin: auto;
+}
+
+.letter-box {
+  width: 5%; /* width that fills its container */
+  height: 0;
+  padding-bottom: 5.5%; /* slightly larger than its width */
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter {
+  font-weight: bold;
+  color: black;
+  display: flex;
+}
+
+.red-background {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.gray-background {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 5%; /* Adjust this margin as per your requirement */
+}
+
+.box {
+  width: 4%; /* Adjust this width as per your requirement */
+  aspect-ratio: 1 / 1.2; /* Adjust this ratio as per your requirement */
+  border: 5px solid black; /* Increase border thickness here */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: black;
+  overflow: hidden; /* To make sure that the letter is not sticking out of the box */
+  /*font-size: 2em; !* Increase font size here *!*/
+  font-size: 3vw;
+}
+
+
+
+.box.X {
+  background-color: lightgray;
+}
+
+
+
+.box.correct {
+  background-color: green;
+}
+
+.box.incorrect {
+  background-color: red;
+}
+
+
+.accuracy {
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 20px auto;
+  text-align: center;
+  /*font-size: 1.5em;*/
+  font-size: 2.5vh;
+  font-weight: bold;
+}
+
+
+#accuracy-container {
+  width: 300px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.accuracy-box {
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
